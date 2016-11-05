@@ -1,0 +1,35 @@
+<div class="container">
+	<header>
+		<h1>iMuseum</h1>
+		<span class="iconfont">&#xe603;</span>
+	</header>
+	<section></section>
+	<footer>
+		<ul>
+			<li class="border-left border-right">
+				<span class="border-right">
+					<strong>世界</strong>
+					<small>World</small>
+				</span>
+			</li>
+			<li>
+				<span class="border-right">
+					<strong>同城</strong>
+					<small>Near</small>
+				</span>
+			</li>
+			<li>
+				<span class="border-right">
+					<strong>动态</strong>
+					<small>Timeline</small>
+				</span>
+			</li>
+			<li>
+				<strong class="iconfont">&#xe63c;</strong>
+			</li>
+			<li>
+				<strong class="iconfont">&#xe616;</strong>
+			</li>
+		</ul>
+	</footer>
+</div>

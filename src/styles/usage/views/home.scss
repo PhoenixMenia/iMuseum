@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/*======================reset=======================*/
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    background-color: #FAFAFA;
+    color: #212121;
+}
+
+body{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+    background: #eee;
+}
+
+ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, figure, form, fieldset, legend, input, textarea, button, p, blockquote, th, td{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, menu{
+    list-style: none;
+}
+
+address, cite, dfn, em, i, optgroup, strong, var{
+    font-style: normal;
+}
+
+article, aside, details, figcaption, footer, header, menu, nav, section, summary, figure{
+    display: block;
+}
+
+
+/*set font*/
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('/images/iconfont/iconfont.eot');
+  src: url('/images/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('/images/iconfont/iconfont.woff') format('woff'),
+  url('/images/iconfont/iconfont.ttf') format('truetype'),
+  url('/images/iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+
+.iconfont {
+    font-family: iconfont;
+}
+
+
+/*======1px边框 媒体查询=========*/
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+   .border-bottom {
+        border-bottom: solid  0.5px #000;
+    }
+    .border-right {
+        border-right: solid  0.5px #000;
+    }
+    .border-left {
+        border-left: solid  0.5px #000;
+    }
+    .border-top {
+        border-top: solid  0.5px #000;
+    }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5) {
+    .border-bottom {
+        border-bottom: solid  0.3333px #000;
+    }
+    .border-right {
+        border-right: solid  0.3333px #000;
+    }
+    .border-left {
+        border-left: solid  0.3333px #000;
+    }
+    .border-top {
+        border-top: solid  0.3333px #000;
+    }
+}
+
+
+/*================variables============*/
+$headerHeight: 40px;
+$footerHeight: 44px;
+//差点忘了颜色不用变量表示 否则会出错
+//$contentColor: #ccc;
+//$headingsColor: #333;
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container header{
+    width: 100%;
+    height: $headerHeight;
+    background: #333;
+    color: #eee;
+    position: relative;
+    h1{
+        height: 100%;
+        width: 100%;
+        line-height: $headerHeight;
+        text-align: center;
+        font-size: 20px;
+    }
+    span{
+        position: absolute;
+        display: block;
+        width: 45px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        right: 10px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: 20px;
+        background: #555;
+        border-radius: 5px;
+    }
+    
+}
+
+.container section{
+    width: 100%;
+    flex: 1;
+    background: #f1f1f1;
+}
+
+.container footer{
+    width: 100%;
+    height: $footerHeight;
+    background: lavender;
+    overflow: hidden;
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        li{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-color: #ccc;
+            span{
+                width: 100%;
+                height: 70%;
+                text-align: center;
+                border-color: #ccc;
+                color: #555;
+                strong{
+                    font-size: 15px;
+                    display: block;
+                    font-family: "微软雅黑";
+                }
+                small{
+                    font-size: 8px;
+                    position: relative;
+                    top: -6px;
+                }
+            }
+        }
+    }
+}
+
+
