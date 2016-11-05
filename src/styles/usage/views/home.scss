@@ -21,7 +21,7 @@ body{
     font-size: 14px;
     line-height: 1.5;
     font-family: Helvetica Neue, Helvetica, STHeiTi, sans-serif;
-    background: #eee;
+    background: e6e6e6;
 }
 
 ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, figure, form, fieldset, legend, input, textarea, button, p, blockquote, th, td{
@@ -55,7 +55,7 @@ article, aside, details, figcaption, footer, header, menu, nav, section, summary
 
 
 .iconfont {
-    font-family: iconfont;
+    font-family: iconfont!important;
 }
 
 
@@ -108,7 +108,7 @@ $footerHeight: 44px;
 .container header{
     width: 100%;
     height: $headerHeight;
-    background: #333;
+    background: #262626;
     color: #eee;
     position: relative;
     h1{
@@ -130,7 +130,7 @@ $footerHeight: 44px;
         bottom: 0;
         margin: auto;
         font-size: 20px;
-        background: #555;
+        background: #3c3c3c;
         border-radius: 5px;
     }
     
@@ -139,13 +139,26 @@ $footerHeight: 44px;
 .container section{
     width: 100%;
     flex: 1;
-    background: #f1f1f1;
+    padding: 10px;
+    .banner{
+       width: 100%; 
+       height: 350px;
+       dl{
+           width: 100%;
+           height: 100%;
+       }
+    }
+    .newsItems{
+        
+    }
+    
 }
 
 .container footer{
     width: 100%;
     height: $footerHeight;
-    background: lavender;
+    //background: linear-gradient(#f6f6f6,#ebeaea,#dfdede);
+    background: #f4f4f4;
     overflow: hidden;
     ul{
         width: 100%;
@@ -158,12 +171,12 @@ $footerHeight: 44px;
             justify-content: center;
             align-items: center;
             border-color: #ccc;
-            span{
+            &>span{
                 width: 100%;
                 height: 70%;
                 text-align: center;
-                border-color: #ccc;
-                color: #555;
+                border-color: #d7d8d8;
+                color: #787676;
                 strong{
                     font-size: 15px;
                     display: block;
@@ -174,6 +187,26 @@ $footerHeight: 44px;
                     position: relative;
                     top: -6px;
                 }
+            }
+        }
+        
+        li:nth-child(4){
+            strong{
+                display: block;
+                width: 35px;
+                height: 35px;
+                background: #b6e3f9;
+                font-size: 20px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                position: relative;
+                left: 13px;
+                color: #fff;
+            }
+        }
+        li:nth-child(5){
+            strong{
+                font-size: 20px;
             }
         }
     }

@@ -3,7 +3,21 @@
 		<h1>iMuseum</h1>
 		<span class="iconfont">&#xe603;</span>
 	</header>
-	<section></section>
+	<section>
+		<div class="banner">
+			<dl>
+				<dt><img src="/images/banner.jpg"/></dt>
+				<dd>
+					<p>Event . 展览</p>
+					<p>驭时 . 先锋 爱彼当代艺术及高级制表展</p>
+					<p>Audemars Piguet</p>
+				</dd>
+			</dl>
+		</div>
+		<div class="newsItems">
+			<article></article>
+		</div>
+	</section>
 	<footer>
 		<ul>
 			<li class="border-left border-right">
@@ -25,10 +39,14 @@
 				</span>
 			</li>
 			<li>
-				<strong class="iconfont">&#xe63c;</strong>
+				<span class="border-right">
+					<strong class="iconfont">&#xe63c;</strong>
+				</span>
 			</li>
 			<li>
-				<strong class="iconfont">&#xe616;</strong>
+				<span>
+					<strong class="iconfont">&#xe616;</strong>
+				</span>
 			</li>
 		</ul>
 	</footer>
